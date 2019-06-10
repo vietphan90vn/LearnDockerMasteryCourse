@@ -1,0 +1,12 @@
+docker run --name hello-nginx -d -p 80:80 nginx
+
+docker run --name hello-mysql -d -p 3306:3306 -e "MYSQL_RANDOM_ROOT_PASSWORD=yes" mysql 
+
+docker run --name hello-apache -d -p 8080:80 httpd
+
+docker container logs hello-mysql
+
+docker container stop hello-nginx hello-mysql hello-apache
+
+docker container rm hello-nginx hello-mysql hello-apache
+

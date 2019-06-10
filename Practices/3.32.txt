@@ -1,0 +1,7 @@
+docker run -it ubuntu
+
+apt-get update && apt-get install curl
+
+docker run -it centos
+
+ yum update curl
